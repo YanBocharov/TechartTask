@@ -1,0 +1,33 @@
+.return {
+  &__title {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  &__subtitle {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  &__wrapper {
+    position: relative;
+    height: 646px;
+  }
+  &__bg {
+    img {
+      position: absolute;
+    }
+  }
+  &__text {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 180px;
+  }
+}
