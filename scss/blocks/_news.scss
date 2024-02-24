@@ -1,0 +1,91 @@
+.news {
+  &__title {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  &__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 83px;
+    column-gap: 40px;
+    margin-bottom: 83px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &-date {
+      width: 82px;
+      display: inline-block;
+      padding: 6px 18px;
+      gap: 10px;
+      border-radius: 20px;
+      background: var(--light-grey, #ecf2f5);
+      color: var(--grey, #6c6e7b);
+      font-family: 'Open Sans';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-title {
+      color: var(--brand-color, #841844);
+      font-family: 'Open Sans';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      margin: 0;
+    }
+    &-text {
+      color: var(--body-text, #000);
+      font-family: 'Open Sans';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      height: 100%;
+    }
+    &-linkWrapper {
+      display: flex;
+      padding: 16px 40px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 50px;
+      border: 2px solid #9b407a;
+      width: 214px;
+      text-decoration: none;
+      transition: 0.5s all;
+      &:hover {
+        background: var(--brand-color, #841844);
+        transition: 0.5s all;
+      }
+      &:hover .news__block-link {
+        color: #fff;
+        transition: 0.5s all;
+      }
+      &:hover svg path {
+        transition: 0.5s all;
+        fill: #fff;
+      }
+      svg path {
+        transition: 0.5s all;
+      }
+    }
+    &-link {
+      color: var(--brand-color, #841844);
+      font-family: 'Open Sans';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      transition: 0.5s all;
+    }
+  }
+}

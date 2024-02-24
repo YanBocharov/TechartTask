@@ -1,4 +1,5 @@
 .return {
+  overflow: hidden;
   &__title {
     color: #fff;
     font-family: 'Open Sans';
@@ -20,8 +21,12 @@
     height: 646px;
   }
   &__bg {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
     img {
-      position: absolute;
+      //   position: absolute;
+      height: 646px;
     }
   }
   &__text {
