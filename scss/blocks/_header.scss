@@ -1,0 +1,22 @@
+.header {
+  &__wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24.12px;
+  }
+  &__title {
+    color: rgb(44, 20, 94);
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 12.5%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__line {
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 27px;
+  }
+}
